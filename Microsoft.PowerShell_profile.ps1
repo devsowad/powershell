@@ -29,7 +29,8 @@ Set-Alias -Name g -Value "git" -Description "git"
 Set-Alias -Name c -Value "clear"
 Set-Alias -Name open -Value "ii"
 
-# alias gacm for git add --all and commit -m
 function gacm { git add  . && git commit -m $args }
+function gacmy { git add  . && yarn commit }
+function gacmn { git add  . && npm run commit }
 
 clear
