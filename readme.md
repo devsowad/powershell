@@ -3,8 +3,8 @@
 ```sh
 Install-Module oh-my-posh -Scope CurrentUser
 Install-Module posh-git -Scope CurrentUser
-Install-Module z -Scope CurrentUser
-Install-Module git-aliases -Scope CurrentUser
+Install-Module z -Scope CurrentUser -AllowClobber
+Install-Module git-aliases -Scope CurrentUser -AllowClobber
 Install-Module Get-ChildItemColor -Scope CurrentUser -AllowClobber
 ```
 
