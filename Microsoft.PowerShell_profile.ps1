@@ -6,7 +6,7 @@ Import-Module git-aliases -DisableNameChecking
 # cd which remembers your history https://www.powershellgallery.com/packages/z/
 Import-Module "z"
 # Set the posh theme
-Set-PoshPrompt -Theme iterm2
+Set-PoshPrompt -Theme bubblesline
   
 $env:POSH_GIT_ENABLED = $true
 
@@ -33,4 +33,8 @@ function gacm { git add  . && git commit -m $args }
 function gacmy { git add  . && yarn commit }
 function gacmn { git add  . && npm run commit }
 
-clear
+$projectFolderLocation = 'C:\Users\sowad\projects'
+
+function diskcleanup { cd $projectFolderLocation && npx rimraf */*/windows/flutter/ephemeral && npx rimraf */*/build && npx rimraf */*/node_modules && npx rimraf */*/vendor && del C:\Windows\Temp\* && del C:\Users\sowad\AppData\Local\Temp\* && del C:\Windows\prefetch\*}
+
+# clear
