@@ -35,6 +35,19 @@ function gacmn { git add  . && npm run commit }
 
 $projectFolderLocation = 'C:\Users\sowad\projects'
 
-function diskcleanup { cd $projectFolderLocation && npx rimraf */*/windows/flutter/ephemeral && npx rimraf */*/build && npx rimraf */*/node_modules && npx rimraf */*/vendor && del C:\Windows\Temp\* && del C:\Users\sowad\AppData\Local\Temp\* && del C:\Windows\prefetch\*}
+function diskcleanup { 
+    cd $projectFolderLocation && 
+    npx rimraf */*/windows/flutter/ephemeral && 
+    npx rimraf */*/build && 
+    npx rimraf */*/node_modules && 
+    npx rimraf */*/vendor && 
+    npx rimraf */*/*/windows/flutter/ephemeral && 
+    npx rimraf */*/*/build && 
+    npx rimraf */*/*/node_modules && 
+    npx rimraf */*/*/vendor && 
+    del C:\Windows\Temp\* && 
+    del C:\Users\sowad\AppData\Local\Temp\* && 
+    del C:\Windows\prefetch\*
+}
 
-# clear
+clear
