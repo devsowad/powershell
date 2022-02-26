@@ -33,6 +33,8 @@ function gacm { git add  . && git commit -m $args }
 function gacmy { git add  . && yarn commit }
 function gacmn { git add  . && npm run commit }
 
+New-Alias which get-command
+
 $projectFolderLocation = 'C:\Users\sowad\projects'
 
 function diskcleanup { 
